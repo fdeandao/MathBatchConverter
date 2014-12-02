@@ -1,0 +1,27 @@
+{
+  "name": "MathBatchConverter",
+  "version": "0.0.0",
+  "description": "Convierte masivamente tex a mathml, svg o png",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdeandao/MathBatchConverter.git"
+  },
+  "keywords": [
+    "mathjax",
+    "svg"
+  ],
+  "author": "Fernando Deanda",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/fdeandao/MathBatchConverter/issues"
+  },
+  "dependencies": {
+    "MathJax-node": "https://github.com/mathjax/MathJax-node/tarball/master",
+    "yargs": "*"
+  },
+  "homepage": "https://github.com/fdeandao/MathBatchConverter"
+}

@@ -1,0 +1,14 @@
+\begin{align}
+I_{5,2}
+&=\int_{0}^{1}\frac{\ln{(1-t)}\ln{\left(\frac{2t+1}{3}\right)}}{2t+1}\,\mathrm{d}t\\
+&=\frac32\int_{1/3}^{1}\frac{\ln{\left(\frac32(1-u)\right)}\ln{\left(u\right)}}{3u}\,\mathrm{d}u\\
+&=\frac12\int_{1/3}^{1}\frac{\ln{\left(\frac32(1-u)\right)}\ln{\left(u\right)}}{u}\,\mathrm{d}u\\
+&=\frac{\ln{\left(\frac32\right)}}{2}\int_{1/3}^{1}\frac{\ln{\left(u\right)}}{u}\,\mathrm{d}u+\frac12\int_{1/3}^{1}\frac{\ln{\left(1-u\right)}\ln{\left(u\right)}}{u}\,\mathrm{d}u\\
+&=\frac{\ln{\left(\frac32\right)}}{2}\left[\frac{\ln^2{\left(u\right)}}{2}\right]_{1/3}^{1}+\frac12\int_{1/3}^{1}\frac{\ln{\left(1-u\right)}\ln{\left(u\right)}}{u}\,\mathrm{d}u\\
+&=-\frac{\ln{\left(\frac32\right)}\ln^2{\left(3\right)}}{4}+\frac12\int_{1/3}^{1}\frac{\ln{\left(1-u\right)}\ln{\left(u\right)}}{u}\,\mathrm{d}u\\
+&=-\frac{\ln{\left(\frac32\right)}\ln^2{\left(3\right)}}{4}+\frac12\left[-\ln{\left(u\right)}\operatorname{Li}_{2}{\left(u\right)}\right]_{1/3}^{1}+\frac12\int_{1/3}^{1}\frac{\operatorname{Li}_{2}{\left(u\right)}}{u}\,\mathrm{d}u\\
+&=-\frac{\ln{\left(\frac32\right)}\ln^2{\left(3\right)}}{4}-\frac{\ln{(3)}\operatorname{Li}_{2}{\left(\frac13\right)}}{2}+\frac12\int_{1/3}^{1}\frac{\operatorname{Li}_{2}{\left(u\right)}}{u}\,\mathrm{d}u\\
+&=-\frac{\ln{\left(\frac32\right)}\ln^2{\left(3\right)}}{4}-\frac{\ln{(3)}\operatorname{Li}_{2}{\left(\frac13\right)}}{2}+\frac12\left[\operatorname{Li}_{3}{\left(u\right)}\right]_{1/3}^{1}\\
+&=-\frac{\ln{\left(\frac32\right)}\ln^2{\left(3\right)}}{4}-\frac{\ln{(3)}\operatorname{Li}_{2}{\left(\frac13\right)}}{2}+\frac12\left[\operatorname{Li}_{3}{\left(1\right)}-\operatorname{Li}_{3}{\left(\frac13\right)}\right]\\
+&=-\frac{\ln^3{\left(3\right)}}{4}+\frac{\ln{(2)}\ln^2{\left(3\right)}}{4}-\frac{\ln{(3)}\operatorname{Li}_{2}{\left(\frac13\right)}}{2}+\frac12\zeta{(3)}-\frac12\operatorname{Li}_{3}{\left(\frac13\right)}\\
+\end{align}

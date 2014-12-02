@@ -1,0 +1,8 @@
+\begin{align}
+\int_0^\infty e^{-nu^2/2}\,s'\,\mathrm{d}u
+&=\int_{s\in[0,1]} e^{-nu^2/2}\,s'\,\mathrm{d}u+\color{red}{\int_{s>1} e^{-nu^2/2}\,s'\,\mathrm{d}u}\\
+&=\int_0^\infty\left(1+\frac23u\right)e^{-nu^2/2}\,\mathrm{d}u-\color{darkorange}{\int_{s>1}\left(1+\frac23u\right)e^{-nu^2/2}\,\mathrm{d}u}\\
+&+\int_0^\infty e^{-nu^2/2}\,O(u^2)\,\mathrm{d}u-\color{darkorange}{\int_{s>1} e^{-nu^2/2}\,O(u^2)\,\mathrm{d}u}\\
+&+\color{red}{\int_{s>1} e^{-nu^2/2}\,s'\,\mathrm{d}u}\\
+&=\sqrt{\frac{\pi}{2n}}+\frac2{3n}+O\left(n^{-3/2}\right)\tag{8}
+\end{align}

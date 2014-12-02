@@ -1,0 +1,21 @@
+\begin{align*}
+x^T C x
+=& 
+\begin{pmatrix} x_1 & x_2 & \cdots & x_n\end{pmatrix}
+\begin{pmatrix} 
+c_{11} & c_{12} & \cdots & c_{1m}\\ 
+c_{21} & c_{22} & \cdots & c_{2m}\\
+\vdots & \vdots& \ddots & \vdots \\
+ c_{n1} & c_{n2} & \cdots & c_{nm}\\
+ \end{pmatrix}
+\begin{pmatrix} x_1 \\ x_2 \\ \vdots \\x_n\end{pmatrix}\\
+=& 
+\begin{pmatrix} x_1 & x_2 & \cdots & x_n\end{pmatrix}
+\begin{pmatrix} 
+c_{11} x_1 + c_{12} x_2 + \cdots c_{1n} x_n\\
+c_{21} x_1 + c_{22} x_2 + \cdots c_{2n} x_n\\
+\vdots\\
+c_{n1} x_1 + a_{n2} x_2 + \cdots a_{nn} x_n\\
+\end{pmatrix}\\
+=& x_1(c_{11} x_1 + c_{12} x_2 + \cdots c_{1n} x_n)+x_2(c_{21} x_1 + c_{22} x_2 + \cdots c_{2n} x_n) + \cdots + x_n(c_{n1} x_1 + a_{n2} x_2 + \cdots a_{nn} x_n)
+\end{align*}

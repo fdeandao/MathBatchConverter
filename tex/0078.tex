@@ -1,0 +1,9 @@
+\begin{align}
+\int\frac{\ln^3x\ln (1-x)}{x}\ dx&=-\int\sum_{n=1}^\infty \frac{x^{n-1}}{n}\ln^3x\ dx\\
+&=-\sum_{n=1}^\infty \frac{1}{n}\int x^{n-1}\ln^3x\ dx\\
+&=-\sum_{n=1}^\infty \frac{1}{n}\frac{\partial^3}{\partial n^3}\left[\int x^{n-1}\ dx\right]\\
+&=-\sum_{n=1}^\infty \frac{1}{n}\frac{\partial^3}{\partial n^3}\left[\frac{x^{n}}{n}\right]\\
+&=-\sum_{n=1}^\infty \frac{1}{n}\left[\frac{x^{n}\ln^3x}{n}-\frac{3x^{n}\ln^2x}{n^2}+\frac{6x^{n}\ln x}{n^3}-\frac{6x^{n}}{n^4}\right]\\
+&=\sum_{n=1}^\infty \left[-\frac{x^{n}\ln^3x}{n^2}+\frac{3x^{n}\ln^2x}{n^3}-\frac{6x^{n}\ln x}{n^4}+\frac{6x^{n}}{n^5}\right]\\
+&=6\operatorname{Li}_5(x)-6\operatorname{Li}_4(x)\ln x+3\operatorname{Li}_3(x)\ln^2x-\operatorname{Li}_2(x)\ln^3x.
+\end{align}

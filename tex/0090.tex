@@ -1,0 +1,13 @@
+\begin{align}
+I_{5,1}
+&=\int_{0}^{1}\frac{\ln{(1-t)}}{2t+1}\,\mathrm{d}t\\
+&=\int_{0}^{1}\frac{\ln{(u)}}{3-2u}\,\mathrm{d}u\\
+&=\frac13\int_{0}^{1}\frac{\ln{(u)}}{1-\frac23u}\,\mathrm{d}u\\
+&=\frac12\int_{0}^{2/3}\frac{\ln{\left(\frac32v\right)}}{1-v}\,\mathrm{d}v\\
+&=\frac{\ln{\left(\frac32\right)}}{2}\int_{0}^{2/3}\frac{\mathrm{d}v}{1-v}+\frac12\int_{0}^{2/3}\frac{\ln{\left(v\right)}}{1-v}\,\mathrm{d}v\\
+&=\frac{\ln{\left(\frac32\right)}}{2}\ln{(3)}+\frac12\int_{0}^{2/3}\frac{\ln{\left(v\right)}}{1-v}\,\mathrm{d}v\\
+&=\frac{\ln{\left(\frac32\right)}\ln{(3)}}{2}+\frac12\int_{1/3}^{1}\frac{\ln{\left(1-w\right)}}{w}\,\mathrm{d}w\\
+&=\frac{\ln{\left(\frac32\right)}\ln{(3)}}{2}+\frac12\left[-\operatorname{Li}_{2}{\left(w\right)}\right]_{1/3}^{1}\\
+&=\frac{\ln{\left(\frac32\right)}\ln{(3)}}{2}+\frac12\left[\operatorname{Li}_{2}{\left(\frac13\right)}-\operatorname{Li}_{2}{\left(1\right)}\right]\\
+&=\frac{\ln^2{(3)}}{2}-\frac{\ln{(2)}\ln{(3)}}{2}+\frac12\operatorname{Li}_{2}{\left(\frac13\right)}-\frac{\pi^2}{12}.
+\end{align}

@@ -1,0 +1,5 @@
+\begin{align*}
+\frac{1}{\sqrt{2\pi n}} \int_{0}^{n} \left(1+\frac{t}{n}\right)^{n}e^{-t}\;dt
+&= \frac{1}{\sqrt{2\pi n}} \int_{0}^{n} \exp \left(-\frac{t^2}{2n} + O\left(\frac{t^3}{n^2}\right)\right)\;dt \\
+&= \frac{1}{\sqrt{2\pi}} \int_{0}^{\sqrt{n}} \exp \left(-\frac{u^2}{2} + O\left(\frac{u^3}{\sqrt{n}}\right)\right)\;du \quad (t = u\sqrt{n}),
+\end{align*}

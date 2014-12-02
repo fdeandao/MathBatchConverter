@@ -1,0 +1,18 @@
+\begin{align}
+\begin{bmatrix} S(n+1) \\ S(n) \\ 1\end{bmatrix} &=
+\left(\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}
+\begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1\end{bmatrix}
+\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}^{-1}\right)^n
+\begin{bmatrix} S(1) \\ S(0) \\ 1\end{bmatrix}
+\\ &=
+\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}
+\begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1\end{bmatrix}^n
+\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}^{-1}
+\begin{bmatrix} S(1) \\ S(0) \\ 1\end{bmatrix}
+\\ &=
+\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}
+\begin{bmatrix} 1 & \binom{n}{1} & \binom{n-1}{2} \\ 0 & 1 & \binom{n}{1} \\ 0 & 0 & 1\end{bmatrix}
+\begin{bmatrix} 0 & 1 & 0 \\ 1 & -1 & 0 \\ 0 & 0 & 1\end{bmatrix}
+\begin{bmatrix} S(1) \\ S(0) \\ 1\end{bmatrix}
+\end{align}
+\tag{7}

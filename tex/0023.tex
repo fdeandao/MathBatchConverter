@@ -1,0 +1,9 @@
+\begin{array}{lll}
+\binom{n}{k}+\binom{n}{k+1}&=&\frac{n!}{k!(n-k)!} + \frac{n!}{(k+1)!(n-(k+1))!}\\
+&=&\frac{n!(k+1)}{k!(k+1)(n-k)!} + \frac{n!(n-k)}{(k+1)!(n-(k+1))!(n-k)}\\
+&=&\frac{n!k+n!+n!n-n!k}{(k+1)!(n-k)!}\\
+&=&\frac{n!+n!n}{(k+1)!((n+1)-(k+1))!}\\
+&=&\frac{n!(n+1)}{(k+1)!((n+1)-(k+1))!}\\
+&=&\frac{(n+1)!}{(k+1)!((n+1)-(k+1))!}\\
+&=&\binom{n+1}{k+1}\\
+\end{array}

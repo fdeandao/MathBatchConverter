@@ -1,6 +1,6 @@
 {
   "name": "MathBatchConverter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convierte masivamente tex a mathml, svg o png",
   "main": "index.js",
   "scripts": {

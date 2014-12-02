@@ -1,0 +1,29 @@
+\begin{align}&\color{#00f}{%
+\lim_{n \to \infty}\bracks{\expo{-n}\sum_{k = 0}^{n}{n^{k} \over k!}}}
+\\[3mm]&=\lim_{n \to \infty}\bracks{\expo{-n}\sum_{k = 0}^{n}
+\exp\pars{k\ln\pars{n} - \ln\pars{k!}}}
+\\[3mm]&=
+\lim_{n \to \infty}\braces{\expo{-n}\sum_{k = 0}^{n}
+\exp\pars{n\ln\pars{n} - \ln\pars{n!} - {1 \over 2n}\bracks{k - n}^{2}}}
+\\[3mm]&=
+\lim_{n \to \infty}\braces{\expo{-n}\,{n^{n} \over n!}\sum_{k = 0}^{n}
+\exp\pars{-{1 \over 2n}\bracks{k - n}^{2}}}
+\\[3mm]&=
+\lim_{n \to \infty}\braces{{\expo{-n}n^{n} \over n!}\int_{0}^{n}
+\exp\pars{-{1 \over 2n}\bracks{k - n}^{2}}\,\dd k}
+\\[3mm]&=
+\lim_{n \to \infty}\bracks{{\expo{-n}n^{n} \over n!}\int_{-n}^{0}
+\exp\pars{-\,{k^{2} \over 2n}}\,\dd k}
+=
+\lim_{n \to \infty}\bracks{{\expo{-n}n^{n} \over n!}\,\root{2n}
+\int_{-\root{n}/2}^{0}\exp\pars{-k^{2}}\,\dd k}
+\\[3mm]&=
+\lim_{n \to \infty}\bracks{{\root{2}n^{n + 1/2}\expo{-n} \over n!}
+\int_{-\infty}^{0}\exp\pars{-k^{2}}\,\dd k}
+=
+\lim_{n \to \infty}\bracks{{\root{2}n^{n + 1/2}\expo{-n} \over n!}
+\,{\root{\pi} \over 2}}
+\\[3mm]&=
+\half\,\lim_{n \to \infty}\bracks{{\root{2\pi}n^{n + 1/2}\expo{-n} \over n!}}
+=\color{#00f}{\Large\half}
+\end{align}

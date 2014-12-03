@@ -23,5 +23,8 @@
     "MathJax-node": "https://github.com/mathjax/MathJax-node/tarball/master",
     "yargs": "*"
   },
+  "bin": {
+    "MathBatchConverter": "./index.js"
+  },
   "homepage": "https://github.com/fdeandao/MathBatchConverter"
 }
